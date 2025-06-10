@@ -1,82 +1,159 @@
 <!DOCTYPE html>
+<!-- Declares the document type and HTML version -->
+
 <html lang="en">
+<!-- Root element of the HTML document with language set to English -->
+
 <head>
     <meta charset="UTF-8">
+    <!-- Sets character encoding to UTF-8 for proper text rendering -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures responsive design on mobile devices -->
+
     <title>HTML Project 1</title>
+    <!-- Title of the web page shown in the browser tab -->
 </head>
+
 <body>
+    <!-- Main content of the web page starts here -->
+
     <header>
+        <!-- Header section typically contains introductory content or navigation -->
+
         <h1>Darlington</h1>
+        <!-- Main heading of the page -->
+
         <p>the man that saved the world</p>
-        <img src="./res/photo1.jpg" alt="image1"width=15%>
+        <!-- Subtitle or short description -->
+
+        <img src="./res/photo1.jpg" alt="image1" width="15%">
+        <!-- Displays an image with a specified width (should put a space before 'width') -->
+
+        <br>
+        <!-- Line break for spacing -->
+
         <div>
             <nav>
+                <!-- Navigation bar -->
+
                 <ul>
+                    <!-- Unordered list of navigation links -->
+
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#work">Work</a></li>
                     <li><a href="#resume">Resume</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <!-- Anchor tags linking to different sections of the page -->
                 </ul>
             </nav>
         </div>
     </header>
+
     <main>
+        <!-- Main content area of the page -->
+
         <section id="about">
+            <!-- About section -->
+
             <h2>About Me</h2>
-            <p>Hello! I'm a passionate web developer with a love for clean design and elegant code. With experience in HTML, CSS, JavaScript, and modern frameworks, I build responsive and user-friendly websites and applications.</p><br>
+
+            <p>
+                Hello! I'm a passionate web developer with a love for clean design and elegant code...
+            </p>
+            <br>
+
             <audio controls>
-                <source src="./res/nwaba.mp3"type='audio/mpeg'>
+                <!-- Audio player with user controls -->
+
+                <source src="./res/nwaba.mp3" type='audio/mpeg'>
+                <!-- Audio source file -->
             </audio>
         </section>
+
         <section id="work">
+            <!-- Work/Portfolio section -->
+
+            <video controls preload="auto" width="350" loop>
+                <!-- Video element with controls, auto preload, width, and loop -->
+
+                <source src="res/vid.mp4" type="video/mp4/avi">
+                <!-- Source video file (Note: type should be "video/mp4"; 'avi' is not correct here) -->
+            </video>
+
             <h2>My Work</h2>
+
             <p>I have been involved in some jobs that have tested me physically and spiritually.</p>
+
             <ul>
+                <!-- List of past work/projects -->
+
                 <li><strong>Portfolio Website</strong> - A responsive site showcasing my projects.</li>
-                <li><strong>E-commerce Store</strong>  - Built using React and Firebase.</li>
-                <li><strong>Blog Platform</strong>  - A CMS-like app for writing and publishing articles.</li>
+                <li><strong>E-commerce Store</strong> - Built using React and Firebase.</li>
+                <li><strong>Blog Platform</strong> - A CMS-like app for writing and publishing articles.</li>
             </ul>
         </section>
+
         <section id="resume">
+            <!-- Resume section -->
+
             <h2>Resume</h2>
+
             <p><strong>Skills</strong></p>
             <ol>
-                <li>HTMLL</li>
+                <!-- Ordered list of skills -->
+
+                <li>HTMLL</li> <!-- Typo: should be "HTML" -->
                 <li>CSS</li>
                 <li>JavaScript</li>
                 <li>React</li>
                 <li>Node.js</li>
                 <li>Git</li>
             </ol>
+
             <p><strong>Experience</strong></p>
             <ol type="A":>
+                <!-- Ordered list with capital letters (Note: colon after "A" is invalid HTML syntax) -->
+
                 <li>Front-End Developer at TechCorp (2022–Present)</li>
                 <li>Intern at WebStart Agency (2021–2022)</li>
             </ol>
+
             <p><strong>Education</strong></p>
             <ol type="I">
+                <!-- Roman numeral list -->
+
                 <li>B.Sc in Computer Science – University of Techville</li>
                 <li>PhD in ECLAiRS</li>
             </ol>
         </section>
+
         <section id="contact">
+            <!-- Contact form section -->
+
             <h2>Contact Me</h2>
+
             <form>
+                <!-- Form for user input -->
+
                 <label>Name</label>
                 <input type="text"><br>
+
                 <label>Email</label>
                 <input type="email" name="email" id="email"><br>
+
                 <label>Message</label>
                 <textarea name="Message" id="message"></textarea>
             </form>
         </section>
     </main>
-    <footer>
-        <p>&copy;All rights reserved</p><br>
-        
 
+    <footer>
+        <!-- Footer section -->
+
+        <p>&copy; All rights reserved</p><br>
     </footer>
 </body>
+
 </html>

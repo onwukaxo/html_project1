@@ -1,110 +1,113 @@
 <!DOCTYPE html>
-<!-- Declares the document type and HTML version -->
+<!-- Declares the document as HTML5 -->
 
 <html lang="en">
-<!-- Root element of the HTML document with language set to English -->
+<!-- The root element of the HTML document with language set to English -->
 
 <head>
     <meta charset="UTF-8">
-    <!-- Sets character encoding to UTF-8 for proper text rendering -->
+    <!-- Specifies the character encoding as UTF-8 for universal character support -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Ensures responsive design on mobile devices -->
+    <!-- Ensures the layout is responsive and scales correctly on different screen sizes -->
 
     <title>HTML Project 1</title>
-    <!-- Title of the web page shown in the browser tab -->
+    <!-- The title displayed on the browser tab -->
 </head>
 
 <body>
-    <!-- Main content of the web page starts here -->
+    <!-- The visible content of the web page begins -->
 
     <header>
-        <!-- Header section typically contains introductory content or navigation -->
+        <!-- Top section of the page that typically contains branding and navigation -->
 
         <h1>Darlington</h1>
-        <!-- Main heading of the page -->
+        <!-- Main title or heading of the page -->
 
-        <p>the man that saved the world</p>
-        <!-- Subtitle or short description -->
+        <p>The man that saved the world</p>
+        <!-- Short subtitle or description -->
 
-        <img src="./res/photo1.jpg" alt="image1" width="15%">
-        <!-- Displays an image with a specified width (should put a space before 'width') -->
+        <img src="./res/photo1.jpg" alt="Portrait of Darlington" width="15%">
+        <!-- Image of the subject with alternative text for accessibility and a width of 15% of the container -->
 
         <br>
-        <!-- Line break for spacing -->
+        <!-- Line break to separate the image from the navigation -->
 
         <div>
             <nav>
-                <!-- Navigation bar -->
+                <!-- Navigation bar containing links to different sections of the page -->
 
                 <ul>
-                    <!-- Unordered list of navigation links -->
-
+                    <!-- Unordered list to structure navigation items -->
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#work">Work</a></li>
                     <li><a href="#resume">Resume</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <!-- Anchor tags linking to different sections of the page -->
+                    <!-- Anchor tags link to corresponding sections by ID -->
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <!-- Main content area of the page -->
+        <!-- Primary content area of the web page -->
 
+        <!-- ========================== About Section ========================== -->
         <section id="about">
-            <!-- About section -->
+            <!-- "About Me" section provides a brief introduction -->
 
             <h2>About Me</h2>
-
             <p>
-                Hello! I'm a passionate web developer with a love for clean design and elegant code...
+                Hello! I'm a passionate web developer with a love for clean design and elegant code. 
+                With experience in HTML, CSS, JavaScript, and modern frameworks, I build responsive 
+                and user-friendly websites and applications.
             </p>
+
             <br>
 
             <audio controls>
-                <!-- Audio player with user controls -->
-
-                <source src="./res/nwaba.mp3" type='audio/mpeg'>
-                <!-- Audio source file -->
+                <!-- Audio player with standard browser controls -->
+                <source src="./res/nwaba.mp3" type="audio/mpeg">
+                <!-- Source file in MP3 format -->
+                Your browser does not support the audio element.
             </audio>
         </section>
 
+        <!-- ========================== Work Section ========================== -->
         <section id="work">
-            <!-- Work/Portfolio section -->
+            <!-- Section showcasing previous projects or accomplishments -->
 
             <video controls preload="auto" width="350" loop>
-                <!-- Video element with controls, auto preload, width, and loop -->
-
-                <source src="res/vid.mp4" type="video/mp4/avi">
-                <!-- Source video file (Note: type should be "video/mp4"; 'avi' is not correct here) -->
+                <!-- Embedded video with controls, preloading enabled, and loop functionality -->
+                <source src="res/vid.mp4" type="video/mp4">
+                <!-- Correct MIME type specified for MP4 video -->
+                Your browser does not support the video tag.
             </video>
 
             <h2>My Work</h2>
-
-            <p>I have been involved in some jobs that have tested me physically and spiritually.</p>
+            <p>
+                I have been involved in projects that challenged me both physically and mentally.
+            </p>
 
             <ul>
-                <!-- List of past work/projects -->
-
-                <li><strong>Portfolio Website</strong> - A responsive site showcasing my projects.</li>
-                <li><strong>E-commerce Store</strong> - Built using React and Firebase.</li>
-                <li><strong>Blog Platform</strong> - A CMS-like app for writing and publishing articles.</li>
+                <!-- Unordered list of highlighted projects -->
+                <li><strong>Portfolio Website</strong> – A responsive site showcasing my projects.</li>
+                <li><strong>E-commerce Store</strong> – Built using React and Firebase.</li>
+                <li><strong>Blog Platform</strong> – A CMS-like app for writing and publishing articles.</li>
             </ul>
         </section>
 
+        <!-- ========================== Resume Section ========================== -->
         <section id="resume">
-            <!-- Resume section -->
+            <!-- Resume section outlining skills, experience, and education -->
 
             <h2>Resume</h2>
 
             <p><strong>Skills</strong></p>
             <ol>
-                <!-- Ordered list of skills -->
-
-                <li>HTMLL</li> <!-- Typo: should be "HTML" -->
+                <!-- Ordered list of technical skills -->
+                <li>HTML</li> <!-- Corrected typo from "HTMLL" -->
                 <li>CSS</li>
                 <li>JavaScript</li>
                 <li>React</li>
@@ -113,47 +116,50 @@
             </ol>
 
             <p><strong>Experience</strong></p>
-            <ol type="A":>
-                <!-- Ordered list with capital letters (Note: colon after "A" is invalid HTML syntax) -->
-
+            <ol type="A">
+                <!-- Ordered list using uppercase letters for items -->
                 <li>Front-End Developer at TechCorp (2022–Present)</li>
                 <li>Intern at WebStart Agency (2021–2022)</li>
             </ol>
 
             <p><strong>Education</strong></p>
             <ol type="I">
-                <!-- Roman numeral list -->
-
+                <!-- Roman numeral list for education background -->
                 <li>B.Sc in Computer Science – University of Techville</li>
                 <li>PhD in ECLAiRS</li>
             </ol>
         </section>
 
+        <!-- ========================== Contact Section ========================== -->
         <section id="contact">
-            <!-- Contact form section -->
+            <!-- Contact form for user inquiries -->
 
             <h2>Contact Me</h2>
 
             <form>
-                <!-- Form for user input -->
+                <!-- Basic contact form with labels and input fields -->
 
-                <label>Name</label>
-                <input type="text"><br>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name"><br><br>
 
-                <label>Email</label>
-                <input type="email" name="email" id="email"><br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@example.com"><br><br>
 
-                <label>Message</label>
-                <textarea name="Message" id="message"></textarea>
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" placeholder="Write your message here..." rows="5" cols="30"></textarea><br><br>
+
+                <input type="submit" value="Send Message">
+                <!-- Submit button to send the form data -->
             </form>
         </section>
     </main>
 
+    <!-- ========================== Footer ========================== -->
     <footer>
-        <!-- Footer section -->
-
-        <p>&copy; All rights reserved</p><br>
+        <!-- Footer content typically includes copyright -->
+        <p>&copy; All rights reserved</p>
+        <br>
     </footer>
-</body>
 
+</body>
 </html>
